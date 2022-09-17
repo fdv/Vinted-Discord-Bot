@@ -14,13 +14,8 @@ import shutil
 import threading
 import time
 import sys
-try:
-    import requests
-    from bs4 import BeautifulSoup
-except:
-    os.system("pip install requests")
-    os.system("pip install bs4")
-
+import requests
+from bs4 import BeautifulSoup
 
 class Spy:
     gris = "\033[1;30;1m"
@@ -140,10 +135,10 @@ except:
 asciiart = f"""{Spy.rouge}
 ██╗   ██╗██████╗  ██████╗ ████████╗
 ██║   ██║██╔══██╗██╔═══██╗╚══██╔══╝
-██║   ██║██████╔╝██║   ██║   ██║   
-╚██╗ ██╔╝██╔══██╗██║   ██║   ██║   
- ╚████╔╝ ██████╔╝╚██████╔╝   ██║   
-  ╚═══╝  ╚═════╝  ╚═════╝    ╚═╝   
+██║   ██║██████╔╝██║   ██║   ██║
+╚██╗ ██╔╝██╔══██╗██║   ██║   ██║
+ ╚████╔╝ ██████╔╝╚██████╔╝   ██║
+  ╚═══╝  ╚═════╝  ╚═════╝    ╚═╝
          Thx 2$py#5430                     \n\n"""
 
 print(asciiart + "\n\n")
